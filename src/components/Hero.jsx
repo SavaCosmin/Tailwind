@@ -5,6 +5,7 @@ import {
     PaperAirplaneIcon,
     ServerIcon,
 } from '@heroicons/react/solid'
+import Button from './Button/ButtonComponent.tsx'
 
 import bgImg from '../assets/cyber-bg.png'
 
@@ -16,7 +17,17 @@ const Hero = () => {
                 <p className='text-2xl'>Unique Sequencing & Production</p>
                 <h1 className='py-3 text-5xl md:text-7xl font-bold'>Cloud Management</h1>
                 <p className='text-2xl'>This is our Tech brand.</p>
-                <button className='py-3 px-6 sm:w-[60%] my-4'>Get Started</button>
+                {/* <button className='py-3 px-6 sm:w-[60%] my-4'>Get Started</button> */}
+                <Button 
+        border="none"
+        color="pink"
+        height = "200px"
+        onClick={() => alert("You clicked on the pink circle!")}
+        radius = "50%"
+        width = "200px"
+        children = "I'm a pink circle!"
+      />
+
             </div>
             <div>
                 <img className='w-full' src={bgImg} alt="/" />
